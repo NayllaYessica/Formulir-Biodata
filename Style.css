@@ -1,0 +1,153 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Layout */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: #FFD1DC;
+    padding: 20px;
+    color: #6D6875;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebars & Main Content */
+  .left-sidebar {
+    background-color: #FFB7B2;
+    width: 25%;
+    padding: 20px;
+    color: #6D6875;
+    text-align: center;
+  }
+  
+  .main-content {
+    background-color: #FFDAC1;
+    width: 50%;
+    padding: 40px 20px;
+    color: #6D6875;
+  }
+  
+  .right-sidebar {
+    background-color: #E2F0CB;
+    width: 25%;
+    padding: 20px;
+    color: #6D6875;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #B5EAD7;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item {
+    background-color: #C7CEEA;
+    padding: 15px 10px;
+    width: 23%;
+    color: #6D6875;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  
+  input[type="file"] {
+    padding: 5px;
+  }
+  
+  .radio-group {
+    margin: 10px 0;
+  }
+  
+  .radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+  }
+  
+  button {
+    background-color: #6D6875;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+
+  /* Untuk layar dengan lebar kurang dari 768px */
+@media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+    
+    .left-sidebar,
+    .main-content,
+    .right-sidebar {
+      width: 100%;
+    }
+    
+    .footer-item {
+      width: 48%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Untuk layar dengan lebar kurang dari 480px */
+  @media (max-width: 480px) {
+    .footer-item {
+      width: 100%;
+    }
+    
+    button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
